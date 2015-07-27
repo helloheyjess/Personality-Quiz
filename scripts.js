@@ -2,10 +2,10 @@
 
 $(function(){
 
-	raccoon = 0;
-	sloth = 0;
-	dolphin = 0;
-	dog = 0;
+	var raccoon = 0;
+	var sloth = 0;
+	var dolphin = 0;
+	var dog = 0;
 
 	// When Show Quiz button is clicked, show first question
 	$('.showQuiz').on('click', function(){
@@ -32,8 +32,6 @@ $(function(){
 		} else if (score === 40) {
 			dog += 1;
 		}
-
-		console.log(score);
 	});
 
 	$('.form2').on('submit', function(e){
@@ -50,8 +48,6 @@ $(function(){
 		} else if (score === 40) {
 			dog += 1;
 		}
-
-		console.log(score);
 	});
 
 	$('.form3').on('submit', function(e){
@@ -68,8 +64,6 @@ $(function(){
 		} else if (score === 40) {
 			dog += 1;
 		}
-
-		console.log(score);
 	});
 
 	$('.form4').on('submit', function(e){
@@ -86,14 +80,11 @@ $(function(){
 		} else if (score === 40) {
 			dog += 1;
 		}
-
-		console.log(score);
 	});
 
 	$('.form5').on('submit', function(e){
 		e.preventDefault();
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
-		console.log(score);
 
 		if (score === 10) {
 			raccoon += 1;
@@ -106,17 +97,13 @@ $(function(){
 		}
 
 		if (raccoon > sloth && raccoon > dolphin && raccoon > dog) {
-			console.log('raccoon wins');
-			$('#raccoon').addClass('questionShow');
+			$('#raccoon, footer').addClass('questionShow');
 		} else if (sloth > raccoon && sloth > dolphin && sloth > dog) {
-			console.log('sloth wins');
-			$('#sloth').addClass('questionShow');
+			$('#sloth, footer').addClass('questionShow');
 		} else if (dolphin > raccoon && dolphin > sloth && dolphin > dog) {
-			console.log('dolphin wins');
-			$('#dolphin').addClass('questionShow');
+			$('#dolphin, footer').addClass('questionShow');
 		} else if (dog > raccoon && dog > sloth && dog > dolphin) {
-			console.log('dog wins');
-			$('#dog').addClass('questionShow');
+			$('#dog, footer').addClass('questionShow');
 		};
 
 	});

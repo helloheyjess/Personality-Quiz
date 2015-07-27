@@ -18,6 +18,7 @@ h1, h2 {
 h1 {
 	font-size: 4em;
 	letter-spacing: 1px;
+	margin-top: 0;
 }
 
 h2 {
@@ -33,18 +34,37 @@ img {
 	max-width: 100%;
 }
 
+a,
+a:visited {
+	color: #FA5C5D;
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover,
+a:focus {
+	color: #444;
+}
+
 button,
 input[type="submit"] {
 	border: none;
 	background: #FA5C5D;
 	color: #fff;
 	padding: 20px 35px;
-	margin: 50px auto 25px;
+	margin: 25px auto;
+	transition: all 0.5s ease-in-out;
+}
+
+button:hover,
+button:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+	background: #444;
 }
 
 .wrapper {
 	max-width: 1000px;
-	margin: 75px auto;
+	margin: 35px auto;
 	text-align: center;
 	padding: 2%;
 }
@@ -53,10 +73,11 @@ input[type="submit"] {
 	display: none;
 	margin: 50px auto;
 	padding: 5% 2%;
-	background: #CCFFE8;
+	background: #D5EFFF;
 	border-radius: 3px;
 	position: relative;
 	box-shadow: 1px 1px 2px #444;
+	transition: all 0.5s ease;
 }
 
 .question:before {
@@ -65,7 +86,7 @@ input[type="submit"] {
 	top: -50px;
 	left: calc(50% - 25px);
 	border: 25px solid transparent;
-	border-bottom: 25px solid #CCFFE8;
+	border-bottom: 25px solid #D5EFFF;
 }
 
 .question input[type="radio"] {
@@ -132,4 +153,41 @@ input[type="submit"] {
 	float: left;
 	width: 45%;
 	margin-right: 5%;
+}
+
+footer {
+	text-align: center;
+	display: none;
+	background: #444;
+	color: #FFF6E6;
+	padding: 1%;
+}
+
+/*Media Queries*/
+
+@media all and (max-width: 425px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.floated,
+	.answer-description {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.answer-description {
+		text-align: center;
+	}
+
+	img {
+		width: 50%;
+		margin: 10px auto;
+	}
 }

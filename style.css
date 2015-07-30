@@ -42,7 +42,7 @@ a:visited {
 
 a:hover,
 a:focus {
-	color: #444;
+	text-decoration: none;
 }
 
 button,
@@ -62,11 +62,37 @@ input[type="submit"]:active {
 	background: #444;
 }
 
+header {
+	text-align: center;
+	background: #444;
+	color: #FFF6E6;
+	padding-top: 1%;
+	position: relative;
+}
+
+header p {
+	margin: 0;
+}
+
+header .fa {
+	cursor: pointer;
+	padding: 5px;
+}
+
+header.up {
+	top:-40px;
+	transition: all 0.5s ease;
+}
+
+header.down {
+	top: 0;
+}
+
 .wrapper {
 	max-width: 1000px;
-	margin: 35px auto;
+	margin: 10px auto;
 	text-align: center;
-	padding: 2%;
+	padding: 0 1%;
 }
 
 .question {
@@ -121,7 +147,7 @@ input[type="submit"]:active {
 	border: 2px solid #FFAC00;
 }
 
-.selected {
+input[type=radio]:checked + label img {
 	border: 2px solid #FFAC00;
 	transform: scale(1.1);
 }
@@ -154,6 +180,8 @@ input[type="submit"]:active {
 	width: 45%;
 	margin-right: 5%;
 }
+
+
 
 footer {
 	text-align: center;

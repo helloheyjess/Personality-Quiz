@@ -4,16 +4,21 @@
 	<meta charset="UTF-8">
 	<title>What's your spirit animal?</title>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<header class="up">
+		<p>Built by <a href="http://jessicataylor.ca/">Jessica Taylor</a> and <a href="http://www.heyjess.ca">Jessica Jones</a></p>
+		<p><i class="fa fa-caret-down fa-2x"></i></p>
+	</header>
 	<div class="wrapper">
 		<img src="images/rabbit.png" alt="Fox">
 		<h1>What's your spirit animal?</h1>
 		<button class="showQuiz animated pulse infinite">Start Quiz</button>
 
-		<div class="question food">
+		<div class="question food animated fadeIn">
 			<h2>What's for dinner?</h2>
 			<form action="" class="form1">
 				<ul>
@@ -26,7 +31,7 @@
 			</form>
 		</div>
 
-		<div class="question habitat">
+		<div class="question habitat animated fadeIn">
 			<h2>Where's your next vacation?</h2>
 			<form action="" class="form2">
 				<ul>
@@ -35,11 +40,11 @@
 					<li><input type="radio" name="habitat" id="habitat3" value="30" required><label for="habitat3"><img src="images/dolphin-vacation.jpg" alt="Picture of a resort"></label></li>
 					<li><input type="radio" name="habitat" id="habitat4" value="40" required><label for="habitat4"><img src="images/dog-vacation.jpg" alt="Picture of a lake-front cottage"></label></li>
 				</ul>
-				<input type="submit" class="select" value="select">
+				<input type="submit" class="select" value="Select">
 			</form>
 		</div>
 
-		<div class="question school">
+		<div class="question school animated fadeIn">
 			<h2>Who did you hang out with in high school?</h2>
 			<form action="" class="form3">
 				<ul>
@@ -48,11 +53,11 @@
 					<li><input type="radio" name="school" id="school4" value="40" required><label for="school4"><img src="images/dog-school.jpg" alt="Picture of jock from The Breakfast Club movie"></label></li>
 					<li><input type="radio" name="school" id="school3" value="30" required><label for="school3"><img src="images/dolphin-school.jpg" alt="Picture of nerds from Revenge of the Nerds"></label></li>
 				</ul>
-				<input type="submit" class="select" value="select">
+				<input type="submit" class="select" value="Select">
 			</form>
 		</div>
 
-		<div class="question transportation">
+		<div class="question transportation animated fadeIn">
 			<h2>How do you get around?</h2>
 			<form action="" class="form4">
 				<ul>
@@ -61,11 +66,11 @@
 					<li><input type="radio" name="transportation" id="transportation1" value="10" required><label for="transportation1"><img src="images/racoon-transportation.jpg" alt="Picture of a Toronto street car"></label></li>
 					<li><input type="radio" name="transportation" id="transportation4" value="40" required><label for="transportation4"><img src="images/dog-transportation.jpg" alt="Picture of a woman riding a bicycle"></label></li>
 				</ul>
-				<input type="submit" class="select" value="select">
+				<input type="submit" class="select" value="Select">
 			</form>
 		</div>
 
-		<div class="question hobbies">
+		<div class="question hobbies animated fadeIn">
 			<h2>What do you like to do on the weekend?</h2>
 			<form action="" class="form5">
 				<ul>
@@ -78,7 +83,7 @@
 			</form>
 		</div>
 
-		<div class="answer hide clearfix" id="raccoon">
+		<div class="answer hide clearfix animated fadeIn" id="raccoon">
 			<div class="floated">
 				<img src="images/raccoon.png" alt="Raccoon">
 			</div>
@@ -86,9 +91,10 @@
 				<h2>Congratulations!<br>  Your Spirit Animal is a Raccoon!</h2>
 				<p>You're a crafty scavenger and you're super comfortable with living off the land. You don't pay much mind to nutrition&mdash;whatever you discover while dumpster diving works for you!</p>
 				<p>You thrive in an urban setting and your favourite pastime is probably Parkour. You prefer to roam around in packs and you're not above getting into trouble, even if you have to spend the night in jail. It's worth it for the party!</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a racoon! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 			</div>
 		</div>
-		<div class="answer hide clearfix" id="sloth">
+		<div class="answer hide clearfix animated fadeIn" id="sloth">
 			<div class="floated">
 				<img src="images/sloth.png" alt="Sloth">
 			</div>
@@ -96,9 +102,10 @@
 				<h2>Congratulations!<br>  Your Spirit Animal is a Sloth!</h2>
 				<p>When you're not munching on vegetation, you're most likely just chilling in your comfort zone trying not to be noticed. Life is hard enough as it is so when in doubt, why not take the easy way out?</p>
 				<p>You prefer hot, balmy climates and when it comes to social situations you'd rather just hang out with your buds than stick your neck out. </p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a sloth! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 			</div>
 		</div>
-		<div class="answer hide clearfix" id="dog">
+		<div class="answer hide clearfix animated fadeIn" id="dog">
 			<div class="floated">
 				<img src="images/dog.png" alt="Dog">
 			</div>
@@ -106,9 +113,10 @@
 				<h2>Congratulations!<br>  Your Spirit Animal is a Dog!</h2>
 				<p>You are the loyal, fun-lovin' social type who's surrounded by friends and always up for a good time. Your life motto is to carpe diem the heck out of each moment and you make it your mission stop and sniff the roses.</p>
 				<p>For you, enjoying the small pleasures is what life's all about- whether that's sticking your head out the window while driving real fast, or enjoying a spontaneous jaunt around the park.</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a dog! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 			</div>
 		</div>
-		<div class="answer hide clearfix" id="dolphin">
+		<div class="answer hide clearfix animated fadeIn" id="dolphin">
 			<div class="floated">
 				<img src="images/dolphin.png" alt="Dolphin">
 			</div>
@@ -116,11 +124,12 @@
 				<h2>Congratulations!<br>  Your Spirit Animal is a Dolphin!</h2>
 				<p>You're a diplomatic leader and probably smarter than everyone else in the room. You're as cultured and articulate as they come, and can hold up your end of the conversation no matter what the topic.</p>
 				<p>Your quiet, reserved nature may make you feel like not everyone understands you, but don't worry- you'll soon be running the world.</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a dolphin! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 			</div>
 		</div>
 	</div>
 	<footer>
-		<p>Built by <a href="http://jessicataylor.ca/">Jessica Taylor</a> and <a href="http://www.heyjess.ca">Jessica Jones</a></p>
+		<p><a href="index.html">Play again! <i class="fa fa-heart"></i></a></p>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

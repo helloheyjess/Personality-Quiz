@@ -1,28 +1,28 @@
 // Spirit Animal Generator
 
 $(function(){
+	// Open credits when arrow is clicked in header
+	$('header .fa').on('click', function(){
+		$('header').toggleClass('down');
+		$(this).toggleClass('fa-caret-down, fa-caret-up')
+	});
 
+	// Functions
+
+	var scrollDown = function(sectionName){
+		$(sectionName).addClass('questionShow');
+		$('html,body').animate({
+			scrollTop: $(sectionName).offset().top
+		}, 1000);
+	}
+
+	// Animal scores
 	var raccoon = 0;
 	var sloth = 0;
 	var dolphin = 0;
 	var dog = 0;
 
-	// When Show Quiz button is clicked, show first question
-	$('.showQuiz').on('click', function(){
-		$(this).removeClass('animated');
-		$('.food').addClass('questionShow');
-	});
-
-	$('.question img').on('click', function(){
-		$(this).addClass('selected');
-	})
-
-	// When question answer is submitted, show next question and add selected radio button's value to score
-	$('.form1').on('submit', function(e){
-		e.preventDefault();
-		$('.habitat').addClass('questionShow');
-		score = parseInt($(this).find('input[type="radio"]:checked').val());
-
+	var calculate = function(){
 		if (score === 10) {
 			raccoon += 1;
 		} else if (score === 20) {
@@ -32,69 +32,48 @@ $(function(){
 		} else if (score === 40) {
 			dog += 1;
 		}
+	};
+
+	// When Show Quiz button is clicked, show first question and scroll down
+	$('.showQuiz').on('click', function(){
+		$(this).removeClass('animated');
+		scrollDown('.food');
+	});
+
+	// When question answer is submitted, show next question, scroll down, and add selected radio button's value to score
+	$('.form1').on('submit', function(e){
+		e.preventDefault();
+		score = parseInt($(this).find('input[type="radio"]:checked').val());
+		calculate();
+		scrollDown('.habitat');
+				
 	});
 
 	$('.form2').on('submit', function(e){
 		e.preventDefault();
-		$('.school').addClass('questionShow');
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
-
-		if (score === 10) {
-			raccoon += 1;
-		} else if (score === 20) {
-			sloth += 1;
-		} else if (score === 30) {
-			dolphin += 1;
-		} else if (score === 40) {
-			dog += 1;
-		}
+		calculate();
+		scrollDown('.school');
 	});
 
 	$('.form3').on('submit', function(e){
 		e.preventDefault();
-		$('.transportation').addClass('questionShow');
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
-
-		if (score === 10) {
-			raccoon += 1;
-		} else if (score === 20) {
-			sloth += 1;
-		} else if (score === 30) {
-			dolphin += 1;
-		} else if (score === 40) {
-			dog += 1;
-		}
+		calculate();
+		scrollDown('.transportation');
 	});
 
 	$('.form4').on('submit', function(e){
 		e.preventDefault();
-		$('.hobbies').addClass('questionShow');
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
-
-		if (score === 10) {
-			raccoon += 1;
-		} else if (score === 20) {
-			sloth += 1;
-		} else if (score === 30) {
-			dolphin += 1;
-		} else if (score === 40) {
-			dog += 1;
-		}
+		calculate();
+		scrollDown('.hobbies');
 	});
 
 	$('.form5').on('submit', function(e){
 		e.preventDefault();
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
-
-		if (score === 10) {
-			raccoon += 1;
-		} else if (score === 20) {
-			sloth += 1;
-		} else if (score === 30) {
-			dolphin += 1;
-		} else if (score === 40) {
-			dog += 1;
-		}
+		calculate();
 
 		if (raccoon > sloth && raccoon > dolphin && raccoon > dog) {
 			$('#raccoon, footer').addClass('questionShow');
@@ -106,6 +85,8 @@ $(function(){
 			$('#dog, footer').addClass('questionShow');
 		};
 
+		$('html,body').animate({
+			scrollTop: $(document).height()
+		}, 1000);
 	});
-
 });

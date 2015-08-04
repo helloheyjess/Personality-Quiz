@@ -92,7 +92,7 @@ header.down {
 	max-width: 1000px;
 	margin: 10px auto;
 	text-align: center;
-	padding: 0 1%;
+	padding: 1% 2.5%;
 }
 
 .question {
@@ -134,7 +134,7 @@ header.down {
 	display: inline-block;
 	transition: all 0.25s ease-in-out;
 	cursor: pointer;
-	margin: 0 1%;
+	margin: 1%;
 }
 
 .question img {
@@ -193,14 +193,6 @@ footer {
 
 /*Media Queries*/
 
-@media all and (max-width: 425px) {
-	h1 {
-		font-size: 3em;
-	}
-	h2 {
-		font-size: 1.5em;
-	}
-}
 
 @media all and (max-width: 650px) {
 	.floated,
@@ -217,5 +209,14 @@ footer {
 	img {
 		width: 50%;
 		margin: 10px auto;
+	}
+}
+
+@media all and (max-width: 425px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.5em;
 	}
 }

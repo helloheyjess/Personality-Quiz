@@ -7,7 +7,7 @@ $(function(){
 		$(this).toggleClass('fa-caret-down, fa-caret-up')
 	});
 
-	// Functions
+	// Show next question and scroll down
 
 	var scrollDown = function(sectionName){
 		$(sectionName).addClass('questionShow');
@@ -16,11 +16,13 @@ $(function(){
 		}, 1000);
 	}
 
-	// Animal scores
+	// Animal score calculation
 	var raccoon = 0;
 	var sloth = 0;
 	var dolphin = 0;
 	var dog = 0;
+	var bear = 0;
+	var rabbit = 0;
 
 	var calculate = function(){
 		if (score === 10) {
@@ -31,6 +33,10 @@ $(function(){
 			dolphin += 1;
 		} else if (score === 40) {
 			dog += 1;
+		} else if (score === 50) {
+			bear += 1;
+		} else if (score === 60) {
+			rabbit += 1;
 		}
 	};
 
@@ -75,15 +81,21 @@ $(function(){
 		score = parseInt($(this).find('input[type="radio"]:checked').val());
 		calculate();
 
-		if (raccoon > sloth && raccoon > dolphin && raccoon > dog) {
+		if (raccoon > sloth && raccoon > dolphin && raccoon > dog && raccoon > bear && raccoon > rabbit) {
 			$('#raccoon, footer').addClass('questionShow');
-		} else if (sloth > raccoon && sloth > dolphin && sloth > dog) {
+		} else if (sloth > raccoon && sloth > dolphin && sloth > dog && sloth > bear && sloth > rabbit) {
 			$('#sloth, footer').addClass('questionShow');
-		} else if (dolphin > raccoon && dolphin > sloth && dolphin > dog) {
+		} else if (dolphin > raccoon && dolphin > sloth && dolphin > dog && dolphin > bear && dolphin > rabbit) {
 			$('#dolphin, footer').addClass('questionShow');
-		} else if (dog > raccoon && dog > sloth && dog > dolphin) {
+		} else if (dog > raccoon && dog > sloth && dog > dolphin && dog > bear && dog > rabbit) {
 			$('#dog, footer').addClass('questionShow');
-		};
+		} else if (bear > raccoon && bear > sloth && bear > dog && bear > dolphin && bear > rabbit) {
+			$('#bear, footer').addClass('questionShow');
+		} else if (rabbit > raccoon && rabbit > sloth && rabbit > dolphin && rabbit > dog && rabbit > bear) {
+			$('#rabbit, footer').addClass('questionShow');
+		} else {
+			$('#chameleon, footer').addClass('questionShow');
+		}
 
 		$('html,body').animate({
 			scrollTop: $(document).height()

@@ -3,6 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>What's your spirit animal?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Facebook -->
+	<meta property="og:title" content="Find your Spirit Animal!" />
+	<meta property="og:site_name" content="Spirit Animal Generator"/>
+	<meta property="og:url" content="http://www.heyjess.ca/spiritanimal" />
+	<meta property="og:description" content="A fun quiz that helps you identify your true spirit animal. Built by Jessica Taylor and Jessica Jones." />
+	<meta property="og:image" content="http://www.heyjess.ca/spiritanimal/social.jpg" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@helloheyjess">
+	<meta name="twitter:creator" content="@helloheyjess">
+	<meta name="twitter:title" content="Find your Spirit Animal!">
+	<meta name="twitter:description" content="A fun quiz that helps you identify your true spirit animal. Built by Jessica Taylor and Jessica Jones.">
+	<meta name="twitter:image" content="http://www.heyjess.ca/spiritanimal/social.jpg">
+
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="animate.css">
@@ -27,6 +45,8 @@
 					<li><input type="radio" name="food" id="food2" value="20" required><label for="food2"><img src="images/sloth-food.jpg" alt="Picture of a salad"></label></li>
 					<li><input type="radio" name="food" id="food3" value="30" required><label for="food3"><img src="images/dolphin-food.jpg" alt="Picture of salmon"></label></li>
 					<li><input type="radio" name="food" id="food4" value="40" required><label for="food4"><img src="images/dog-food.jpg" alt="Picture of a steak"></label></li>
+					<li><input type="radio" name="food" id="food5" value="50" required><label for="food5"><img src="images/bear-food.jpg" alt="Picture of a honey pot"></label></li>
+					<li><input type="radio" name="food" id="food6" value="60" required><label for="food6"><img src="images/rabbit-food.jpg" alt="Picture of a carrot"></label></li>
 				</ul>
 				<input type="submit" class="select" value="Select">
 			</form>
@@ -40,6 +60,8 @@
 					<li><input type="radio" name="habitat" id="habitat1" value="10" required><label for="habitat1"><img src="images/raccoon-vacation.jpg" alt="Picture of a city skyline"></label></li>
 					<li><input type="radio" name="habitat" id="habitat3" value="30" required><label for="habitat3"><img src="images/dolphin-vacation.jpg" alt="Picture of a resort"></label></li>
 					<li><input type="radio" name="habitat" id="habitat4" value="40" required><label for="habitat4"><img src="images/dog-vacation.jpg" alt="Picture of a lake-front cottage"></label></li>
+					<li><input type="radio" name="habitat" id="habitat6" value="60" required><label for="habitat6"><img src="images/rabbit-vacation.jpg" alt="Picture of a flower-filled meadow"></label></li>
+					<li><input type="radio" name="habitat" id="habitat5" value="50" required><label for="habitat5"><img src="images/bear-vacation.jpg" alt="Picture of a lake and mountains"></label></li>
 				</ul>
 				<input type="submit" class="select" value="Select">
 			</form>
@@ -51,7 +73,9 @@
 				<ul>
 					<li><input type="radio" name="school" id="school2" value="20" required><label for="school2"><img src="images/sloths-school.jpg" alt="Picture of stoners from Dazed and Confused movie"></label></li>
 					<li><input type="radio" name="school" id="school1" value="10" required><label for="school1"><img src="images/raccoon-school.jpg" alt="Picture of street gang from West Side Story"></label></li>
+					<li><input type="radio" name="school" id="school6" value="60" required><label for="school6"><img src="images/rabbit-school.jpg" alt="Picture of character from Mean Girls with rabbit ears"></label></li>
 					<li><input type="radio" name="school" id="school4" value="40" required><label for="school4"><img src="images/dog-school.jpg" alt="Picture of jock from The Breakfast Club movie"></label></li>
+					<li><input type="radio" name="school" id="school5" value="50" required><label for="school5"><img src="images/bear-school.jpg" alt="Picture of Piglet from Winnie the Pooh"></label></li>
 					<li><input type="radio" name="school" id="school3" value="30" required><label for="school3"><img src="images/dolphin-school.jpg" alt="Picture of nerds from Revenge of the Nerds"></label></li>
 				</ul>
 				<input type="submit" class="select" value="Select">
@@ -66,6 +90,8 @@
 					<li><input type="radio" name="transportation" id="transportation2" value="20" required><label for="transportation2"><img src="images/sloth-transportation.jpeg" alt="Picture of a person requesting an Uber on their phone"></label></li>
 					<li><input type="radio" name="transportation" id="transportation1" value="10" required><label for="transportation1"><img src="images/racoon-transportation.jpg" alt="Picture of a Toronto street car"></label></li>
 					<li><input type="radio" name="transportation" id="transportation4" value="40" required><label for="transportation4"><img src="images/dog-transportation.jpg" alt="Picture of a woman riding a bicycle"></label></li>
+					<li><input type="radio" name="transportation" id="transportation5" value="50" required><label for="transportation5"><img src="images/bear-transportation.jpg" alt="Picture of a canoe on the lake"></label></li>
+					<li><input type="radio" name="transportation" id="transportation6" value="60" required><label for="transportation6"><img src="images/rabbit-transportation.jpg" alt="Picture of someone running"></label></li>
 				</ul>
 				<input type="submit" class="select" value="Select">
 			</form>
@@ -78,7 +104,9 @@
 					<li><input type="radio" name="hobbies" id="hobbies2" value="20" required><label for="hobbies2"><img src="images/sloth-hobbies.jpg" alt="Picture of a man sleeping on a couch"></label></li>
 					<li><input type="radio" name="hobbies" id="hobbies1" value="10" required><label for="hobbies1"><img src="images/raccoon-hobbies.jpg" alt="Picture of a person in handcuffs"></label></li>
 					<li><input type="radio" name="hobbies" id="hobbies4" value="40" required><label for="hobbies4"><img src="images/dog-hobbies.jpg" alt="Picture of someone crowdsurfing at a house party"></label></li>
+					<li><input type="radio" name="hobbies" id="hobbies6" value="60" required><label for="hobbies6"><img src="images/rabbit-hobbies.jpg" alt="Picture of a spin class"></label></li>
 					<li><input type="radio" name="hobbies" id="hobbies3" value="30" required><label for="hobbies3"><img src="images/dolphin-hobbies.jpg" alt="Picture of a person looking at paintings in an art gallery"></label></li>
+					<li><input type="radio" name="hobbies" id="hobbies5" value="50" required><label for="hobbies5"><img src="images/bear-hobbies.jpg" alt="Picture of a buffet table"></label></li>
 				</ul>
 				<input type="submit" class="select revealAnimal" value="Find your spirit animal!">
 			</form>
@@ -128,6 +156,39 @@
 				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a dolphin! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
 			</div>
 		</div>
+		<div class="answer hide clearfix animated fadeIn" id="bear">
+			<div class="floated">
+				<img src="images/bear.png" alt="Bear">
+			</div>
+			<div class="answer-description">
+				<h2>Congratulations!<br>  Your Spirit Animal is a Bear!</h2>
+				<p>You're a bit of a foodie and in the winter months you can often be found watching TV with a smorgasbord of delicious treats at your side. You're much more fun in the summer and enjoy outdoorsy activities like swimming, fishing, and foraging when the weather is mild.</p>
+				<p>Strangers find you to be quite intimidating but your friends know the truth&mdash;you are actually a friendly and cuddly person to be around!</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a bear! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+			</div>
+		</div>
+		<div class="answer hide clearfix animated fadeIn" id="rabbit">
+			<div class="floated">
+				<img src="images/rabbit.png" alt="Rabbit">
+			</div>
+			<div class="answer-description">
+				<h2>Congratulations!<br>  Your Spirit Animal is a Rabbit!</h2>
+				<p>You're an energetic creature who stops for no one! You tend to get bored when the pace isn't fast enough for your liking and that leads to destructive behavior.</p>
+				<p>You're quite the athlete and you can often be found running at the track, working out in the gym, or playing sports with your friends.</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a rabbit! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+			</div>
+		</div>
+		<div class="answer hide clearfix animated fadeIn" id="chameleon">
+			<div class="floated">
+				<img src="images/chameleon.png" alt="Chameleon">
+			</div>
+			<div class="answer-description">
+				<h2>Congratulations!<br>  Your Spirit Animal is a Chameleon!</h2>
+				<p>You're hard to pin down! You're a bit of an enigma, even to those who know you best. You tend to take on the personality of those around you&mdash;but that doesn't mean you aren't special!</p>
+				<p>You blend in well with whatever friend group you spend time with, and even though you're somewhat mysterious you still have a lot to bring to the table.</p>
+				<p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.heyjess.ca/spiritanimal" data-text="My spirit animal is a chameleon! What's your spirit animal?">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+			</div>
+		</div>
 	</div>
 	<footer>
 		<p><a href="index.html">Play again! <i class="fa fa-heart"></i></a></p>
@@ -135,5 +196,16 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="scripts.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62228782-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
